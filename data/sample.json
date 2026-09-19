@@ -1,0 +1,15 @@
+{
+  "project": "ATP GitHub Connector Sandbox",
+  "version": "1.0.0",
+  "environment": "testing",
+  "features": [
+    "repositories",
+    "branches",
+    "commits",
+    "issues",
+    "pull_requests",
+    "actions",
+    "releases",
+    "graphql"
+  ]
+}
