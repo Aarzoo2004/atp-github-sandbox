@@ -21,3 +21,5 @@ This repository provides safe test data for:
 ## Test Repository
 
 This repository is disposable and may be modified by automated connector tests.
+## Development
+This section exists for connector testing.
