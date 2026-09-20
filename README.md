@@ -23,3 +23,5 @@ This repository provides safe test data for:
 This repository is disposable and may be modified by automated connector tests.
 ## Development
 This section exists for connector testing.
+
+Connector compare test fixture
