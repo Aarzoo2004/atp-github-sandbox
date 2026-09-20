@@ -25,3 +25,5 @@ This repository is disposable and may be modified by automated connector tests.
 This section exists for connector testing.
 
 Connector compare test fixture
+
+Pull request live integration test fixture
