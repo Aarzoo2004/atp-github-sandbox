@@ -1,0 +1,9 @@
+{
+  "name": "github-connector-dependabot-fixture",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Disposable dependency fixture for GitHub connector testing",
+  "dependencies": {
+    "lodash": "4.17.15"
+  }
+}
