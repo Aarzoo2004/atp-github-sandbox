@@ -1,0 +1,34 @@
+name: Connector Test Workflow
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  connector-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run connector fixture test
+        run: |
+          echo "GitHub connector fixture test"
+          echo "Repository: $GITHUB_REPOSITORY"
+          echo "Branch: $GITHUB_REF_NAME"
+          echo "Commit: $GITHUB_SHA"
+
+      - name: Create test artifact
+        run: |
+          mkdir -p connector-test-output
+          echo "GitHub connector artifact fixture" > connector-test-output/result.txt
+          echo "Workflow run: $GITHUB_RUN_ID" >> connector-test-output/result.txt
+
+      - name: Upload connector artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: connector-test-artifact
+          path: connector-test-output/result.txt
