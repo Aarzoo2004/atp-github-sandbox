@@ -1,0 +1,14 @@
+name: Connector Cancel Test
+
+on:
+  workflow_dispatch:
+
+jobs:
+  cancel-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Long running test
+        run: |
+          echo "Starting cancellation fixture"
+          sleep 300
+          echo "This should not be reached if cancellation works"
