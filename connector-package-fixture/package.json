@@ -1,0 +1,13 @@
+{
+  "name": "@aarzoo2004/atp-github-connector-fixture",
+  "version": "1.0.0",
+  "description": "Disposable npm package for GitHub connector testing",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aarzoo2004/atp-github-sandbox.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  }
+}
